@@ -1,0 +1,15 @@
+{
+  "name": "raise-parent-conversation-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A parent-first AI conversation preparation MVP for the Raise product management capstone.",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

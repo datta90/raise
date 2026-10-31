@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7f7f1" />
+  <meta name="description" content="A calmer way to prepare for important conversations with your teenager." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>Raise — Start with understanding</title>
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <button class="brand-button" type="button" id="brand-home" aria-label="Raise home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="brand-name">raise<span class="brand-dot">.</span></span>
+    </button>
+    <nav class="header-nav" aria-label="Main navigation">
+      <button class="nav-link" id="nav-home" type="button">Prepare</button>
+      <button class="nav-link" id="nav-space" type="button">My space <span id="history-count" class="count-pill">0</span></button>
+    </nav>
+  </header>
+
+  <main id="main" class="app-main">
+    <div id="app" aria-live="polite" aria-busy="false"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="brand-mark small" aria-hidden="true"><span></span><span></span><span></span></span> raise.</div>
+    <p>A little preparation. A little more understanding.</p>
+    <div class="footer-links">
+      <button type="button" id="footer-privacy">Privacy & safety</button>
+      <span aria-hidden="true">·</span>
+      <button type="button" id="footer-clear">Clear my data</button>
+    </div>
+    <p class="footer-disclaimer">Raise supports preparation, not therapy or crisis care. You stay in control of what you say.</p>
+  </footer>
+
+  <dialog id="privacy-dialog" class="privacy-dialog">
+    <div class="dialog-inner">
+      <button type="button" class="dialog-close" id="privacy-close" aria-label="Close privacy and safety">×</button>
+      <div class="eyebrow">A note before you begin</div>
+      <h2>Your story belongs to you.</h2>
+      <p>Your topics and reflections are saved in this browser on this device so you can return to them. Raise does not create an account or save this app's conversation text on its server.</p>
+      <p>When you generate an AI plan, the age band, selected options and the context you type are sent to the configured AI provider to create the response. Please do not enter names, school names, addresses, contact details, usernames or other identifying information.</p>
+      <p>AI suggestions can be imperfect. Edit anything that doesn't sound like you. Raise is not therapy, diagnosis, legal or medical advice, crisis support, or a tool to monitor your teenager.</p>
+      <p>If anyone may be in immediate danger, contact local emergency services. For abuse, self-harm or another serious safety concern, involve an appropriate trusted adult or qualified professional rather than relying on Raise alone.</p>
+      <button type="button" class="button button-primary button-full" id="privacy-done">I understand</button>
+    </div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

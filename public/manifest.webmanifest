@@ -1,0 +1,12 @@
+{
+  "name": "Raise — Conversation Preparation",
+  "short_name": "Raise",
+  "description": "A calmer way to prepare for important conversations with your teenager.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f7f1",
+  "theme_color": "#f7f7f1",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
