@@ -27,8 +27,8 @@ test('Raise MVP HTTP smoke tests', async t => {
   const port = await freePort();
   const child = spawn(process.execPath, ['server.mjs'], {
     cwd: new URL('..', import.meta.url),
-    env: { ...process.env, PORT: String(port), HOST: '127.0.0.1', OPENAI_API_KEY: '' },
-    stdio: ['ignore', 'pipe', 'pipe'],
+                      env: { ...process.env, PORT: String(port), HOST: '127.0.0.1', GEMINI_API_KEY: '' },
+                      stdio: ['ignore', 'pipe', 'pipe'],
   });
   let logs = '';
   child.stdout.on('data', chunk => { logs += chunk.toString(); });

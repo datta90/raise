@@ -172,7 +172,7 @@ function planView(topic) {
   return `
     <div class="page-intro"><div class="eyebrow">Step 1 of 2 · Your conversation plan</div><h1>Start with understanding.</h1><p>A few grounded options for <strong>${esc(topicTitle(topic))}</strong>. Keep what feels true to you and edit the rest.</p></div>
     <div class="flow-track" aria-label="Progress"><span class="track-step current"><span class="track-dot">1</span> Prepare</span><span class="track-line"></span><span class="track-step"><span class="track-dot">2</span> Reflect</span></div>
-    ${demo ? `<div class="notice demo"><span class="notice-icon">ⓘ</span><div><strong>Preview mode — sample plan, not AI-generated.</strong><br>This environment has no OpenAI API key configured. Add a server-side API key to generate context-specific plans.</div></div>` : `<div class="notice" style="background:#e8f4e9;border:1px solid #d7e9d9;color:#315e4b"><span class="notice-icon">✦</span><div><strong>AI-generated draft.</strong> Read it through and change any wording that doesn't sound like you.</div></div>`}
+    ${demo ? `<div class="notice demo"><span class="notice-icon">✦</span><div><strong>Preview mode — sample plan, not AI-generated.</strong><br>This environment has no Gemini API key configured. Add a server-side API key to generate context-specific plans.</div></div>` : `<div class="notice" style="background:#e8f4e9;border:1px solid #d7e9d9;color:#315e4b"><span class="notice-icon">✦</span><div><strong>AI-generated draft.</strong> Read it through and change any wording that doesn't sound like you.</div></div>`}
     <div class="result-layout">
       <div class="result-main">
         <section class="plan-card featured">
