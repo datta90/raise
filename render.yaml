@@ -2,9 +2,11 @@ services:
   - type: web
     name: raise-parent-conversation-mvp
     runtime: node
+    region: singapore
     plan: free
     buildCommand: npm install
     startCommand: npm start
+    healthCheckPath: /api/health
     envVars:
       - key: NODE_VERSION
         value: "22"
